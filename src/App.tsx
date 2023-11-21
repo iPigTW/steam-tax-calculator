@@ -9,7 +9,7 @@ function App() {
         <h1>Steam Tax Calculator</h1>
         <input type='number' onChange={e => setPrice(e.target.value)} placeholder='Price here' ></input>
         <br/>
-        <input type="number" value={newPrice} disabled></input>
+        <input type="number" value={newPrice} onChange={e => setNewPrice(e.target.value)}></input>
         <br/>
         <button onClick={() => setNewPrice((price/1.15-0.01).toFixed(2)) }>Calculate!</button>
       </div>
