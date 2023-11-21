@@ -1,11 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
 function App() {
-  const [price, setPrice] = useState(0);
-  const [newPrice, setNewPrice] = useState(0);
+  const [price, setPrice] = useState<any | null>(0);
+  const [newPrice, setNewPrice] = useState<any | null>(0);
   return (
     <>
       <div className='container'>
